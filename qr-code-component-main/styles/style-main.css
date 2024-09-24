@@ -1,0 +1,45 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: Outfit, sans-serif;
+}
+
+.container-qr-code-component {
+    display: grid;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    padding: 17px 17px 40px 17px;
+    margin: 20px auto;
+    gap: 20px;
+}
+
+.container-qr-code-component .text {
+    font-size: 15px;
+    color: hsl(216, 15%, 48%);
+    margin: 0 auto;
+    max-width: 280px;
+}
+.container-qr-code-component .title {
+    font-size: 150%;
+    color: hsl(218, 44%, 22%);
+}
+
+.container-qr-code-component .qr-code {
+    border-radius: 20px;
+    width: 100%;
+}
+
+@media screen and (max-width: 375px) {
+    .container-qr-code-component {
+        max-width: 280px;
+    }
+    .container-qr-code-component .title {
+        font-size: 1.4rem;
+    }
+}
