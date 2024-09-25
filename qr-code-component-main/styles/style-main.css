@@ -12,10 +12,11 @@ body {
     background-color: hsl(212, 45%, 89%);
 }
 
-.container-qr-code-component {
+.card {
     display: grid;
     text-align: center;
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.082) 0px 10px 20px 5px;
     border-radius: 20px;
     width: 90%;
     max-width: 17.5rem;
@@ -24,19 +25,19 @@ body {
     gap: 20px;
 }
 
-.container-qr-code-component .text {
+.card .text {
     font-size: 15px;
     color: hsl(216, 15%, 48%);
     margin: 0 auto;
     max-width: 280px;
 }
 
-.container-qr-code-component .title {
+.card .title {
     font-size: 1.4rem;
     color: hsl(218, 44%, 22%);
 }
 
-.container-qr-code-component .qr-code {
+.card .qr-code {
     border-radius: 20px;
     width: 100%;
 }
