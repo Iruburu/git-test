@@ -1,0 +1,88 @@
+:root {
+    --font-family: "Inter", sans-serif; /* 400, 600, 700 */
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+}
+
+ul, li {
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    color: var(--White);
+    text-decoration: none;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: var(--font-family);
+    background-color: var(--Grey-900);
+}
+
+.card-social-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    text-align: center;
+    width: 75vw;
+    max-width: 340px;
+    margin: 0 auto;
+    color: var(--White);
+    background-color: var(--Grey-800);
+    padding: 2.5em;
+    border-radius: 1em;
+}
+
+.card-social-profile .header-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.card-social-profile .header-card .avatar-profile {
+    border-radius: 50%;
+    width: 100px;
+}
+
+.card-social-profile .header-card .title {
+    font-size: 1.8em;
+    font-weight: 600;
+    padding: 0 0 13px 0;
+}
+
+.card-social-profile .header-card .sub-title {
+    color: var(--Green);
+    font-weight: 700;
+} 
+
+.card-social-profile .list-social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-social-profile .list-social-links .link {
+    display: block;
+    font-weight: 600;
+    padding:  15px;
+    background-color: var(--Grey-700);
+    border-radius: 0.6em;
+    transition: 0.1s;
+}
+
+.card-social-profile .list-social-links .link:hover {
+    color: var(--Grey-800);
+    background-color: var(--Green);
+}

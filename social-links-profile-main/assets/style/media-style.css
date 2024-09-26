@@ -1,0 +1,11 @@
+@media screen and (max-width: 435px) {
+    body {
+        font-size: 0.9em;
+    }
+    .card-social-profile {
+        padding: 1.8em    ;
+    }
+    .card-social-profile .header-card .avatar-profile {
+        width: 90px;
+    }
+}
