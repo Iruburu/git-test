@@ -1,0 +1,21 @@
+@media screen and (max-width: 580px) {
+    .body {
+        font-size: 1.1em;
+        padding: 0;
+    }
+
+    .main {
+        width: 100vw;
+        max-width: none;
+        padding: 0 0 3em 0;
+        border-radius: 0;
+    }
+
+    .main .image-header {
+        border-radius: 0;
+    }
+
+    .main .content {
+        padding: 0 2em;
+    }
+}
