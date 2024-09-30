@@ -34,6 +34,7 @@ h2 {
 }
 
 .subtitle {
+    font-weight: 400;
     color: var(--Brown-800);
 }
 
@@ -58,7 +59,7 @@ h2 {
 
 .main {
     width: 45vw;
-    max-width: 700px;
+    max-width: 720px;
     min-width: 460px;
     padding: 2.2em;
     gap: 2em;
