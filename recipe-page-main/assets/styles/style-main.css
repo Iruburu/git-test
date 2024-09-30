@@ -22,10 +22,9 @@ hr {
 }
 
 h1,
-h2,
-h3 {
+h2 {
     font-family: var(--Young-Serif);
-    padding: 0 0 20px 0;
+    padding: 0 0 17px 0;
 }
 
 .title {
@@ -36,10 +35,6 @@ h3 {
 
 .subtitle {
     color: var(--Brown-800);
-}
-
-.mintitle {
-    color: var(--Rose-800);
 }
 
 .column {
@@ -88,7 +83,7 @@ h3 {
 }
 
 .main .content .list {
-    gap: 1em;
+    gap: 0.9em;
     padding: 0 0 0 1.5em;
 }
 
@@ -102,8 +97,14 @@ h3 {
 }
 
 .main .preparation-time {
-    padding: 2em;
+    padding: 1.6em;
     background-color: var(--Rose-50);
+}
+
+.main .preparation-time .subtitle {
+    font-family: var(--Outfit);
+    font-size: 1.3em;
+    color: var(--Rose-800);
 }
 
 .main .preparation-time .list .item::marker {
