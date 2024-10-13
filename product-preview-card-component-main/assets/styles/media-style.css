@@ -1,0 +1,24 @@
+@media screen and (max-width: 600px) {
+    .card-product {
+        min-height: 680px;
+    }
+    .grid {
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+    }
+    
+    .card-product .div-content {
+        padding: 25px;
+    }
+    
+    .card-product .div-banner {
+        background-image: url('../images/image-product-mobile.jpg');
+        border-radius: 15px 15px 0 0;
+    }
+
+    .card-product .content .title {
+        max-width: 17ch;
+        font-size: 2.1em;
+        margin-top: 10px;
+    }
+}

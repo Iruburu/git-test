@@ -1,0 +1,136 @@
+:root {
+    /* Fonts */
+    --Fraunces: "Fraunces", serif;  /* 700 */
+    --Montserrat: "Montserrat", serif; /* 500, 700 */
+
+    /* Primary */
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+
+    /* Neutral */
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+h1 {
+    font-family: var(--Fraunces);
+}
+
+p {
+    font-weight: 500;
+    line-height: 1.5em
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--Montserrat);
+    min-height: 100vh;
+    color: var(--Dark-grayish-blue);
+    background-color: var(--Cream);
+}
+
+.card-product {
+    width: 94vw;
+    max-width: 670px;
+    height: 500px;
+    margin: 0 auto;
+    background-color: var(--White);
+    border-radius: 15px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+}
+
+.card-product .div-banner {
+    background-image: url('../images/image-product-desktop.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-color: var(--Dark-grayish-blue);
+    border-radius: 15px 0 0 15px;
+}
+
+.card-product .div-content {
+    padding: 35px;
+}
+
+.card-product .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between ;
+    height: 100%;
+}
+
+.card-product .content .top-title {
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+.card-product .content .title {
+color: var(--Very-dark-blue);
+font-weight: 700;
+    font-size: 2.2rem;
+    max-width: 10ch;
+    margin-top: 25px;
+} 
+
+.card-product .content .div-value {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.card-product .content .div-value .total {
+    font-family: var(--Fraunces);
+    font-size: 2.2em;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+}
+
+.card-product .content .div-value .original {
+    text-decoration: line-through;
+    font-weight: 500;
+}
+
+.card-product .content .add-card {
+    display: flex;
+    width: 100%;
+    font-size: 1em;
+    font-weight: 700;
+    font-family: var(--Montserrat);
+    justify-content: center;
+    text-decoration: none;
+    color: var(--White);
+    padding-block: 15px;
+    gap: 12px;
+    background-color: var(--Dark-cyan);
+    border-radius: 10px;
+}
+
+.card-product .content .add-card::before {
+    content: '';
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    background-image: url('../icons/icon-cart.svg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
