@@ -122,6 +122,7 @@ font-weight: 700;
     gap: 12px;
     background-color: var(--Dark-cyan);
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .card-product .content .add-card::before {
