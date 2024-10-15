@@ -122,7 +122,12 @@ font-weight: 700;
     gap: 12px;
     background-color: var(--Dark-cyan);
     border-radius: 10px;
+    transition: 0.1s;
     cursor: pointer;
+}
+
+.card-product .content .add-card:hover {
+    background-color: #1a4031;
 }
 
 .card-product .content .add-card::before {
