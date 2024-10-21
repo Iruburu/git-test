@@ -1,0 +1,170 @@
+:root {
+    /* # Fonts */
+
+    --poppins-thin: "Poppins", sans-seri;
+    /* 200, 400, 600 */
+
+    /* # Primary */
+
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* # Neutral */
+
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+b {
+    font-weight: 600;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--poppins-thin);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    padding-inline: 20px;
+    background-color: var(--Very-Light-Gray);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+}
+
+.column-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main .header {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    color: var(--Grayish-Blue);
+    align-items: center;
+    gap: 17px;
+}
+
+.main .header .title {
+    font-size: 2.2em;
+    font-weight: 200;
+    max-width: 25ch;
+    color: var(--Very-Dark-Blue);
+}
+
+.main .header .desc {
+    max-width: 54ch;
+    font-size: 0.95em;
+}
+
+.main .features {
+    max-width: 1150px;
+}
+
+.main .features .card {
+    overflow-x: hidden;
+    background-color: white;
+    max-width: 363px;
+    min-height: 240px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 25px -5px var(--Grayish-Blue);
+}
+
+.main .features .card::-webkit-scrollbar {
+    display: none;
+}
+
+.main .features .card::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+}
+
+.main .features .Supervisor::before {
+    background-color: var(--Cyan);
+}
+
+.main .features .Team-Builder::before {
+    background-color: var(--Red);
+}
+
+.main .features .Karma::before {
+    background-color: var(--Orange);
+}
+
+.main .features .Calculator::before {
+    background-color: var(--Blue);
+}
+
+.main .features .card .content {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    text-align: start;
+    height: calc(100% - (30px * 2) - 4px);
+    padding: 30px;
+    font-size: 0.9em;
+    color: var(--Grayish-Blue);
+}
+
+.main .features .card .content .title {
+    color: var(--Very-Dark-Blue);
+    padding-block-end: 10px;
+}
+
+.main .features .card .content .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: end;
+}
+
+.main .features .card .content .icon::before {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main .features .Supervisor .content .icon::before {
+    background-image: url('../icons/icon-supervisor.svg');
+}
+
+.main .features .Team-Builder .content .icon::before {
+    background-image: url('../icons/icon-team-builder.svg');
+}
+
+.main .features .Karma .content .icon::before {
+    background-image: url('../icons/icon-karma.svg');
+}
+
+.main .features .Calculator .content .icon::before {
+    background-image: url('../icons/icon-calculator.svg');
+}

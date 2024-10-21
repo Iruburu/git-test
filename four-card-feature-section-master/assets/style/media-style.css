@@ -1,0 +1,50 @@
+@media screen and (max-width: 870px) {
+    body {
+        padding: 70px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 25px;
+    }
+
+    .column-flex {
+        flex-direction: row;
+        gap: 25px;
+    }
+
+    .main .features .card {
+        width: clamp(263px, 45vw, 333px);
+        height: 210px;
+
+    }
+
+    .main .features .card .content {
+        height: calc(100% - (15px * 2) - 4px);
+        padding-block: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .grid {
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+
+    .column-flex {
+        flex-direction: column;
+    }
+
+    .main .header .title {
+        font-size: 1.6em;
+    }
+
+    .main .header .desc {
+        font-size: 0.98em;
+        max-width: 41ch;
+    }
+
+    .main .features .card {
+        width: 80vw;
+    }
+}
