@@ -1,0 +1,62 @@
+:root {
+    /* ### Font */
+
+    --Barlow-Semi-Condensed: "Barlow Semi Condensed", sans-serif; /* 500, 600 */
+
+    /* ### Primary */
+
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayis-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ### Neutral */
+
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+.post1 { grid-area: post1; }
+.post2 { grid-area: post2; }
+.post3 { grid-area: post3; }
+.post4 { grid-area: post4; }
+.post5 { grid-area: post5; }
+
+.outstanding {
+    background-color: var(--Moderate-violet);
+}
+
+.semi-outstanding {
+    background-color: var(--Very-dark-blackish-blue);
+}
+
+.min-outstanding {
+    background-color: var(--Very-dark-grayis-blue);
+}
+
+.grid {
+    display: grid;   
+    grid-template-areas: 'post1 post1 post2 post5'
+    'post3 post4 post4 post5';
+    gap: 30px;
+    padding: 10px;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: var(--Light-grayish-blue);
+}
+
+.main {
+    max-width: 1200px;
+    margin-inline: auto;
+}
